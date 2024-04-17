@@ -17,3 +17,5 @@ Grafisch schöner gestalten
 Probleme bzw. Anpassungen:
 Anpassung der Themen auf Naturwissenschaften allgemein und eventuell auf Englisch, je nach Datensatz welchen wir brauchen
 Fragen über französisches Vokabular einbauen, als Unterhaltung / Auflockerung, um die volle Aufmerksamkeit des Nutzers zu haben, diese sind einfach gehalten
+
+Der Wireframe wurde bearbeitet und unter Wireframe.pdf aktualisiert.

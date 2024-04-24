@@ -33,7 +33,7 @@ def main():
 
     st.image('Fussballspieler.jpg')
 
-    st.page_link("pages/page1.py", label="Drücke um zu starten", icon="😸")
+    st.page_link("page1.py", label="Drücke um zu starten", icon="😸")
 
 if __name__ == "__main__":
     main()

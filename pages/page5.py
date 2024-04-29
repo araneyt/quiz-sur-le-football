@@ -35,7 +35,7 @@ def main():
     st.title("Quiz zu den Naturwissenschaften")
 
     # Laden der Fragen aus der CSV-Datei
-    questions = load_questions("fragen.csv")
+    questions = load_questions("Fragen.csv")
 
     # Anzeige einer zufälligen Frage
     question = show_question(questions)

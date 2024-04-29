@@ -24,4 +24,4 @@ if "df_fragen" in st.session_state.keys():
 #    else:
 #        st.error("Falsch! Die richtige Antwort ist " + row["correct_answer"])
 
-st.page_link("pages/page5.py", label="Weiter", icon="😸")
+st.page_link("pages/page6.py", label="Weiter", icon="😸")

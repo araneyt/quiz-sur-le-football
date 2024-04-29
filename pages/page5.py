@@ -98,12 +98,7 @@ def main():
     # Anzeige der Antwortmöglichkeiten
     correct_answer = questions.loc[questions["question"] == question, "distractor1"].values[0]
     selected_answer = show_answers(questions, correct_answer)
-  
-  # Timer von 10 herunterzählen
-    timer_text = st.empty()
-    for i in range(10, 0, -1):
-        timer_text.text(f"Timer: {i}")
-        time.sleep(1)
+ 
  
     # Überprüfung, ob die Antwort korrekt ist
     if selected_answer == correct_answer:

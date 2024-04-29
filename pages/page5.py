@@ -41,16 +41,30 @@ def main():
     # Anzeige einer zufälligen Frage
     question = show_question(questions)
 
-    # Timer von 15 herunterzählen für die Anzeige der richtigen Antwort
+    # Timer von 10 herunterzählen für das Lesen der Frage
     timer_text = st.empty()
-    for i in range(15, 0, -1):
-        timer_text.text(f"Timer: {i}")
+    for i in range(10, 0, -1):
+        timer_text.text(f"Timer (Frage): {i}")
         time.sleep(1)
-        if i == 1:
-            # Anzeige der Antwortmöglichkeiten
-            correct_answer = questions.loc[questions["question"] == question, "distractor1"].values[0]
-            selected_answer = show_answers(questions, correct_answer)
-            st.write(f"Die richtige Antwort ist: {correct_answer}")
+
+    # Anzeige der Antwortmöglichkeiten
+    correct_answer = questions.loc[questions["question"] == question, "distractor1"].values[0]
+    selected_answer = show_answers(questions, correct_answer)
+
+    # Timer von 15 herunterzählen für das Auswählen der Antwort
+    timer_text.empty()
+    for i in range(15, 0, -1):
+        timer_text.text(f"Timer (Antwort): {i}")
+        time.sleep(1)
+
+    # Anzeige der richtigen Antwort
+    st.write(f"Die richtige Antwort ist: {correct_answer}")
+
+    # Überprüfung, ob die Antwort korrekt ist
+    if selected_answer == correct_answer:
+        st.success("Richtig! Die Antwort ist: " + selected_answer)
+    else:
+        st.error("Falsch! Die richtige Antwort ist: " + correct_answer)
 
 if __name__ == "__main__":
     main()

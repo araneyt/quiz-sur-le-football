@@ -27,8 +27,9 @@ def show_question_and_answers(questions):
 
     # Anzeige der Antwortmöglichkeiten
     st.write("Antwortmöglichkeiten:")
-    for idx, answer in enumerate(distractors):
-        st.write(f"{idx+1}. {answer}")
+    answer_options = [str(idx+1) + ". " + answer for idx, answer in enumerate(distractors)]
+    for answer in answer_options:
+        st.write(answer)
 
     return random_question, distractors
 
@@ -64,8 +65,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-
-
-

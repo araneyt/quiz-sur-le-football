@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import random
 import time
- 
+
 # Laden der Fragen aus der CSV-Datei
 @st.cache
 def load_questions(filename):
@@ -14,7 +14,7 @@ def show_question(questions):
     random_question = random.choice(questions["question"].values)
     st.write("Frage:", random_question)
     return random_question
- 
+
 # Funktion zur Anzeige der Antwortmöglichkeiten
 def show_answers(questions, correct_answer):
     # Zufällige Auswahl von 4 Antworten (einschließlich der richtigen Antwort)
@@ -23,45 +23,42 @@ def show_answers(questions, correct_answer):
         random_answer = random.choice(questions[["distractor1", "distractor2", "distractor3", "correct_answer"]].values.flatten())
         if random_answer not in answers:
             answers.append(random_answer)
- 
+
     random.shuffle(answers)
- 
+
     # Anzeigen der Antworten und Auswahl durch den Benutzer
     selected_answer = st.radio("Antworten:", options=answers, index=None)
+
     return selected_answer
- 
+
 # Hauptprogramm
 def main():
     st.title("Quiz zu den Naturwissenschaften")
- 
+
     # Laden der Fragen aus der CSV-Datei
     questions = load_questions("Fragen.csv")
- 
+
     # Anzeige einer zufälligen Frage
     question = show_question(questions)
 
-    # Timer von 10 Sekunden für das Lesen der Frage
-    with st.empty():
-        for i in range(10, 0, -1):
-            st.write(f"Timer: {i}")
-            time.sleep(1)
+    # Timer von 10 herunterzählen für die Auswahl der Antwort
+    timer_text = st.empty()
+    for i in range(10, 0, -1):
+        timer_text.text(f"Timer: {i}")
+        time.sleep(1)
 
     # Anzeige der Antwortmöglichkeiten
     correct_answer = questions.loc[questions["question"] == question, "distractor1"].values[0]
     selected_answer = show_answers(questions, correct_answer)
+    
+    # Timer von 15 herunterzählen für die Anzeige der richtigen Antwort
+    timer_text.empty()
+    timer_text = st.empty()
+    for i in range(15, 0, -1):
+        timer_text.text(f"Timer: {i}")
+        time.sleep(1)
+        if i == 1:
+            st.write(f"Die richtige Antwort ist: {correct_answer}")
 
-    # Timer von 15 Sekunden für die Anzeige der richtigen Antwort
-    with st.empty():
-        for i in range(15, 0, -1):
-            st.write(f"Timer für die Antwort: {i}")
-            time.sleep(1)
-
-    # Überprüfung, ob die Antwort korrekt ist
-    if selected_answer == correct_answer:
-        st.success("Richtig! Die Antwort ist: " + selected_answer)
-    else:
-        st.error("Falsch! Die richtige Antwort ist: " + correct_answer)
- 
 if __name__ == "__main__":
     main()
-

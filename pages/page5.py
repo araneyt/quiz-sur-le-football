@@ -14,10 +14,18 @@ def show_question_and_answers(questions):
     random_question = random.choice(questions["question"].values)
     st.write("Frage:", random_question)
 
-    # Anzeige der Antwortmöglichkeiten
+    # Zufällige Auswahl der Antwortmöglichkeiten
     distractors = questions.loc[questions["question"] == random_question, ["distractor1", "distractor2", "distractor3"]].values[0]
-    distractors.append(questions.loc[questions["question"] == random_question, "correct_answer"].values[0])
+    correct_answer = questions.loc[questions["question"] == random_question, "correct_answer"].values[0]
+
+    # Überprüfen, ob die richtige Antwort bereits in den Ablenkern enthalten ist
+    if correct_answer not in distractors:
+        distractors.append(correct_answer)
+
+    # Antworten mischen
     random.shuffle(distractors)
+
+    # Anzeige der Antwortmöglichkeiten
     st.write("Antwortmöglichkeiten:")
     for idx, answer in enumerate(distractors):
         st.write(f"{idx+1}. {answer}")

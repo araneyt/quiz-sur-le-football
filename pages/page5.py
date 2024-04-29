@@ -8,7 +8,7 @@ import time
 def load_questions(filename):
     return pd.read_csv(filename)
 
-# Funktion zur Anzeige einer zufälligen Frage
+# Funktion zur Anzeige einer zufälligen Frage und Antwortmöglichkeiten
 def show_question_and_answers(questions):
     # Zufällige Auswahl einer Frage
     random_question = random.choice(questions["question"].values)
@@ -25,13 +25,10 @@ def show_question_and_answers(questions):
     # Antworten mischen
     random.shuffle(distractors)
 
-    # Anzeige der Antwortmöglichkeiten
-    st.write("Antwortmöglichkeiten:")
-    answer_options = [str(idx+1) + ". " + answer for idx, answer in enumerate(distractors)]
-    for answer in answer_options:
-        st.write(answer)
+    # Anzeige der Antwortmöglichkeiten als Auswahlmöglichkeiten
+    selected_answer = st.selectbox("Antwortmöglichkeiten:", options=distractors)
 
-    return random_question, distractors
+    return random_question, selected_answer, correct_answer
 
 # Hauptprogramm
 def main():
@@ -43,21 +40,24 @@ def main():
     # Anzeige einer zufälligen Frage und Antwortmöglichkeiten
     st.write("Bitte lesen Sie die Frage und wählen Sie dann eine Antwort aus.")
     st.write("Sie haben 10 Sekunden Zeit, um die Frage zu lesen.")
-    question, answers = show_question_and_answers(questions)
+    question, selected_answer, correct_answer = show_question_and_answers(questions)
 
     # Timer von 10 herunterzählen (Zeit zum Lesen der Frage)
-    for i in range(10, 0, -1):
+    remaining_time = 10
+    while remaining_time > 0:
+        st.write(f"Verbleibende Zeit zum Lesen der Frage: {remaining_time} Sekunden")
         time.sleep(1)
+        remaining_time -= 1
 
     # Timer von 15 herunterzählen (Zeit zum Auswählen der Antwort)
     st.write("Sie haben 15 Sekunden Zeit, um eine Antwort auszuwählen.")
-    for i in range(15, 0, -1):
-        st.write(f"Verbleibende Zeit: {i} Sekunden")
+    remaining_time = 15
+    while remaining_time > 0:
+        st.write(f"Verbleibende Zeit zum Auswählen der Antwort: {remaining_time} Sekunden")
         time.sleep(1)
+        remaining_time -= 1
 
     # Überprüfung, ob die Antwort korrekt ist
-    selected_answer = st.selectbox("Wählen Sie Ihre Antwort:", options=answers, index=0)
-    correct_answer = questions.loc[questions["question"] == question, "correct_answer"].values[0]
     if selected_answer == correct_answer:
         st.success("Richtig! Die Antwort ist: " + correct_answer)
     else:
@@ -65,3 +65,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

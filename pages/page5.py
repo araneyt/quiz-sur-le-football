@@ -15,7 +15,7 @@ def show_question_and_answers(questions):
     st.write("Frage:", random_question)
 
     # Zufällige Auswahl der Antwortmöglichkeiten
-    distractors = questions.loc[questions["question"] == random_question, ["distractor1", "distractor2", "distractor3"]].values[0]
+    distractors = list(questions.loc[questions["question"] == random_question, ["distractor1", "distractor2", "distractor3"]].values[0])
     correct_answer = questions.loc[questions["question"] == random_question, "correct_answer"].values[0]
 
     # Überprüfen, ob die richtige Antwort bereits in den Ablenkern enthalten ist
@@ -59,7 +59,7 @@ def main():
     selected_answer = st.selectbox("Wählen Sie Ihre Antwort:", options=answers, index=0)
     correct_answer = questions.loc[questions["question"] == question, "correct_answer"].values[0]
     if selected_answer == correct_answer:
-        st.success("Richtig! Die Antwort ist: " + selected_answer)
+        st.success("Richtig! Die Antwort ist: " + correct_answer)
     else:
         st.error("Falsch! Die richtige Antwort ist: " + correct_answer)
 

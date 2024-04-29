@@ -5,8 +5,8 @@ import time
 
 # Laden der Fragen aus der CSV-Datei
 @st.cache
-def load_questions(filename):
-    return pd.read_csv(filename)
+def load_questions(Fragen.csv):
+    return pd.read_csv(Fragen.csv)
 
 # Funktion zur Anzeige einer zufälligen Frage
 def show_question(questions):

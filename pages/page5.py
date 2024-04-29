@@ -48,3 +48,12 @@ def main():
     # Anzeige der Antwortmöglichkeiten
     correct_answer = questions.loc[questions["question"] == question, "distractor1"].values[0]
     selected_answer = show_answers(questions, correct_answer)
+ 
+    # Überprüfung, ob die Antwort korrekt ist
+    if selected_answer == correct_answer:
+        st.success("Richtig! Die Antwort ist: " + selected_answer)
+    else:
+        st.error("Falsch! Die richtige Antwort ist: " + correct_answer)
+ 
+if __name__ == "__main__":
+    main()

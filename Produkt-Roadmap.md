@@ -1,9 +1,10 @@
 [Produkt-Roadmap.pdf](https://github.com/araneyt/quiz-sur-le-football/files/15186444/Produkt-Roadmap.pdf)
 Wir möchten eine Lernapp erstellen, dass uns das Lernen vereinfacht.
 Unsere Inspiration war das Wandtafelfussball der Oberstufe.
-Die Themen haben wir auf die medizinischen Fächer abgegrenzt. Es sollten Multiple Choice Fragen erscheinen mit nur einer richtigen Antwort.
-Der User spielt alleine gegen den Computer, welcher ein 90% Richtigkeitsrate und eine Falsch-Rate von 10% hat.
-Am Ende wird ein Ranking aufgezeigt, dass vorzu immer wieder aktualisiert wird, wenn der Spieler eine neue Runde absolviert hat.
+Die Themen haben wir auf die naturwissenschaftliche Fächer abgegrenzt. Es sollten Multiple Choice Fragen erscheinen mit nur einer richtigen Antwort.
+Zu Beginn kann man einen Schwierigkeitsgrad wählen. Hier wollen wir unsere Nutzer jedoch "austricksen" und die umgekehrte Psychologie in Anspruch nehmen. Den die Fragen sind gleich zufällig angeordnet, egal ob Schwierig oder Einfach angewählt wurde. 
+Der User spielt alleine gegen den Computer.
+Sobald ein Tor bzw. ein Gegentor geschossen wird, soll ein GIF erscheinen, welches den "Sieg" oder die "Niederlage" symbolisiert. Danach soll ein Button erscheinen, welcher zu den nächsten Fragen verlinkt. 
 
 -	5 Funktionen (Features)!
 

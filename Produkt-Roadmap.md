@@ -1,4 +1,4 @@
-[Produkt-Roadmap.pdf](https://github.com/araneyt/quiz-sur-le-football/files/15186444/Produkt-Roadmap.pdf)
+[Uploading Produkt-Roadmap.pdf…]()
 Wir möchten eine Lernapp erstellen, dass uns das Lernen vereinfacht.
 Unsere Inspiration war das Wandtafelfussball der Oberstufe.
 Die Themen haben wir auf die naturwissenschaftliche Fächer abgegrenzt. Es sollten Multiple Choice Fragen erscheinen mit nur einer richtigen Antwort.

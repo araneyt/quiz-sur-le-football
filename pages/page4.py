@@ -87,7 +87,7 @@ def main():
     with st.form("answer_form"):
         if not st.session_state.question_asked:
             st.write("Frage:", st.session_state.question)
-            st.write("Wählen Sie eine oder mehrere Antworten aus:")
+            st.write("Wählen Sie eine Antworte aus:")
             st.session_state.user_input = st.multiselect("Antworten:", options=st.session_state.answers, default=st.session_state.user_input)
             submit_button = st.form_submit_button("Antworten überprüfen")
             if submit_button:

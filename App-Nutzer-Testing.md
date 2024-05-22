@@ -2,6 +2,7 @@ Wir haben unser App unserer Testnutzerin Leonie gegeben und haben uns an unten a
 
 Regel 1: Den Prototyp nicht erklären!
 Wir haben Leonie das App nicht erklärt, sodass mögliche Verwirrungen aufkommen konnten. 
+
 Regel 2: Der Prototyp muss selbsterklärend sein!
 Diese Regel wiederspiegelt sich mit der ersten. Wenn Verwirrungen aufkommen, scheint das App nicht selbsterklärend zu sein.
 

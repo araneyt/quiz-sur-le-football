@@ -1,4 +1,5 @@
 Reflexion:
+
 Von Beginn an gab es einige Hürden und Pläne mussten im Verlauf der Arbeit etwas abgeändert werden. Es begann mit einem Problem mit den Secrets, diese haben wir dann statt von Araney von Vanessa verwendet. 
 
 Das darstellen des Fussballfeldes brachte auch einige Schwierigkeiten mit sich. Erst war das Ziel ein Bild einzufügen, sodass ein wirkliches Spielfeld zu sehen ist. Dies hat leider nicht funktioniert und so haben wir es mit der klassischen Wandtafelfussballfelddarstellung gelöst. 
@@ -9,6 +10,7 @@ Diese Probleme konnten wir dank hilfreicher Tipps unserer Dozierenden, ChatGPT u
 
 
 Learnings:
+
 ChatGPT kann eine gute Hilfestellung sein, jedoch sollte man immer den Code anschauen und versuchen zu verstehen. So kann man auf folgenden pages davon lernen und auch selbst Codes entwerfen. Zudem hat auch ChatGPT seine Grenzen und man muss die Fragen sehr genau und klar stellen. 
 
 Oft kommt es vor, dass man an Kleinigkeiten viel Zeit verbraucht und an Problemen hängen bleibt. Es hat geholfen nach einer gewissen Zeit knobeln, ein anderes Problem anzugehen und später darauf zurück zu kommen. 

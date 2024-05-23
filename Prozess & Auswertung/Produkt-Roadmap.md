@@ -6,8 +6,8 @@ Wir möchten eine Lernapp erstellen, dass uns das Lernen vereinfacht. Unsere Ins
 
 Version 1.0
 
-Lernapp mit Multi-Pages erstelle, welche miteinander verlinkt sind
-    CSV suchen und importieren  Fragen einfügen, 4 Antwortmöglichkeiten, Timer der von 10 Sek runter zählt
+Lernapp mit Multi-Pages erstelle, welche miteinander verlinkt sind, CSV suchen und importieren,
+Fragen einfügen, 4 Antwortmöglichkeiten, Timer der von 10 Sek runter zählt
 
 Version 2.0 3. Anzeigen von richtig oder falsch ausgewählten Antworten / Lösungen 4. Verlinkung dessen mit Fussballfeld
 

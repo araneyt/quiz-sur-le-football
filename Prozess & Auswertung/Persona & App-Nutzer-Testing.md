@@ -9,12 +9,14 @@ Regel 1: Den Prototyp nicht erklären! Wir haben Leonie das App nicht erklärt, 
 Regel 2: Der Prototyp muss selbsterklärend sein! Diese Regel wiederspiegelt sich mit der ersten. Wenn Verwirrungen aufkommen, scheint das App nicht selbsterklärend zu sein.
 
 Fragen:
+- Gab es Verwirrungen beim durchgehen der App?
+Ja. Bei den Fragen konnte man mehr als nur eine Antwort anwählen, obwohl nur eine Antwort richtig ist. 
 
-    Gab es Verwirrungen beim durchgehen der App?
+- Ist die App optisch für dich ansprechend?
 
-    Ist die App optisch für dich ansprechend?
 
-    Würdest du das App in Zukunft benutzen bzw. macht das App so mehr Freude (z.B. wegen den GIF's)?
+- Würdest du das App in Zukunft benutzen bzw. macht das App so mehr Freude (z.B. wegen den GIF's)?
 
-    Hast du Anmerkungen oder Verbesserungsvorschläge?
+
+- Hast du Anmerkungen oder Verbesserungsvorschläge?
 

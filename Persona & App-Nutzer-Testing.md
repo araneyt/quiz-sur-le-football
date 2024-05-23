@@ -1,3 +1,8 @@
+Persona:
+Wir haben unsere Mitstudierende Leonie gefragt, da sie die gleiche Fächer besucht und es somit für uns am besten beurteilen kann. Anhand des Templates haben wir erkenne können, dass wir ein Game erstellen müssen, welches einfach zum bedienen ist. Die Fragen müssen auch verständlich gestellt werden, damit es zu keine Verwirrung kommt.
+Template: [Template Leonie.pdf](https://github.com/araneyt/quiz-sur-le-football/files/15413547/Template.Leonie.pdf)
+
+App-Nutzer-Testing:
 Wir haben unser App unserer Testnutzerin Leonie gegeben und haben uns an unten angeführte Regel gehalten. Anschliessend sind wir mit ihr folgende Punkte/Fragen durchgegangen.
 
 Regel 1: Den Prototyp nicht erklären!

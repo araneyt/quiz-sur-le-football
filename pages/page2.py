@@ -22,7 +22,7 @@ color = st.select_slider(
 options=['Einfach', 'Mittel', 'Schwierig'])
 st.write('Dein Schwierigkeitsgrad ist', color)
 
-st.write('❕ Wenn du dich traust, ist unterhalb des Bildes der Knopf, um zum Spiel zu gelangen')
+st.write('❕ Wenn Du dich traust, ist unterhalb des Bildes ein Button, um zum Spiel zu gelangen')
 #Bild einer schreinenden Frau einfügen
 st.image("Bilder/Frau.jpg") 
 #Verlinkung zur nächsten Seite mit einem Button

@@ -21,7 +21,7 @@ color = st.select_slider(
     'Du kannst zwischen Einfach, Mittel und Schwierig auswählen',
 options=['Einfach', 'Mittel', 'Schwierig'])
 st.write('Dein Schwierigkeitsgrad ist', color)
-
+#Einfügen Hilfetext 
 st.write('❕ Wenn Du dich traust, ist unterhalb des Bildes ein Button, um zum Spiel zu gelangen')
 #Bild einer schreinenden Frau einfügen
 st.image("Bilder/Frau.jpg") 
